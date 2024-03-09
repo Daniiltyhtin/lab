@@ -1,10 +1,11 @@
 <?php 
 
 class File {
+
     public $file; //file-name
     public $fp; //file-pointer
 
-    public function __construct($file, $fp)
+    public function __construct($file = "file.txt")
     {
         $this->file = $file;
         if(!is_writable($this -> file)){
@@ -20,10 +21,10 @@ class File {
         fclose($this -> fp);
     }
 
-    public function write(){
-        
+    public function write($text){
+        if(fwrite($this -> fp, $text.PHP_EOL) === false)
+        echo "Не могу произвести запись в файл ($this->file)";
+        exit;
     }
-
-
 
 }
