@@ -1,9 +1,11 @@
 <?php
 
-require_once ('classes/Product.php');
+error_reporting(-1);
+require_once 'classes/Product.php';
+require_once 'classes/NotebookProduct.php';
+require_once 'classes/BookProduct.php';
 
-$pc1 = new Product('1000', 'Acer', '2400 MHz', null);
-$book1 = new Product('100', 'Книга 1', null, '200 стр.');
-
-$pc1->getProductInfo('pc');
-$book1->getProductInfo('notebook');
+$book = new BookProduct('Книга 1', 20, 1000);
+$notebook = new NotebookProduct('Dell', 1000, 'Intel');
+echo $book->getProduct();
+echo $notebook->getProduct();
