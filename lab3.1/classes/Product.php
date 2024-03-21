@@ -6,42 +6,26 @@ class Product {
     public $clock;
     public $pages;
 
-    public function __construct($price, $nameGood, $clock = null,$pages = null){
+    public function __construct($nameGood, $price, $clock = null,$pages = null){
     
     $this->price = $price;
     $this->nameGood = $nameGood;
     $this->clock = $clock;
     $this->pages = $pages;
-
     }
 
-    public function getProductInfo($type) {
-        $out = "<h3>О товаре    `````````````````````````````````````````````````````````````````````````````````````   ``````````{$this->nameGood} </h3><br>
-        Наименование товара{$this->nameGood} <br>
-        Цена:{$this->price} <br>";
-        if($type == 'pc'){
-        $out .= "Частота {$this->clock} <br>";
-        }else{
-        $out .= "Количество страниц {$this->pages} <br>";
-        }
-        echo $out;
-        }
-
-        public function getProduct()
-        {
-        return "<hr><b>О
-        товаре:</b><br>
-        Наименование: {$this->name}<br>
-        Цена: {$this->price}<br>";
-        }
-
-        public function getName()
-        {
-        return $this->name;
-        }
-        
-        public function getPrice()
-        {
-        return $this->price;
-        }
+    public function getProduct()
+    {
+    return "<hr><br>О товаре:</br>
+    <br>Наименование: {$this->nameGood}</br>
+    <br>Цена: {$this->price}</br>";
+    }
+    public function getName()
+    {
+    return $this->nameGood;
+    }
+    public function getPrice()
+    {
+    return $this->price;
+    }
 }
