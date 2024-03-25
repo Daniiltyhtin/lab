@@ -21,9 +21,11 @@ Class Product{
     }
 
     public function getProduct(){
-        $out = "<hr><p>Идентификатор: {$this -> id}</p>".
+        $out =  "<hr><p>Идентификатор: {$this -> id}</p>".
         "<p>Наименование: {$this -> name}</p>".
-        "<p>Цена: {}</p>";
-        
+        "<p>Цена: {$this -> price}</p>".
+        "<p>Количество: {$this -> qty}</p>".
+        "<p>Размер: {$this -> size}</p>";
+        return $out;
     }
     }
