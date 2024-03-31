@@ -4,8 +4,6 @@
     require 'classes/Product.php';
     require 'classes/VideoAdapterProduct.php';
     require 'classes/PCProduct.php';
-
-    
     
     $pc1 = new PCProduct(1, 'DEll',30000, 2, 'medium', 'AMD', 16, 6);
     echo $pc1 -> getProductInfo();
