@@ -7,7 +7,7 @@ Class Product{
     public $qty;
     public $size;
 
-    public function __construct($id, $name, $price, $qty, $size){
+    public function __construct($id, $name, $price, $qty, $size = null){
         
         $this->id = $id;
 
@@ -20,7 +20,7 @@ Class Product{
         $this->size = $size;
     }
 
-    public function getProduct(){
+    public function getProductInfo(){
         $out =  "<hr><p>Идентификатор: {$this -> id}</p>".
         "<p>Наименование: {$this -> name}</p>".
         "<p>Цена: {$this -> price}</p>".

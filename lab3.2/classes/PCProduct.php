@@ -3,21 +3,24 @@
 class PCProduct extends Product{
     public $cpu;
     public $ram;
-    public $CountCore;
+    public $countCore;
+    
 
-    public function __construct($id, $name, $price, $qty, $size, $cpu, $ram, $CountCore){
+    public function __construct($id, $name, $price, $qty, $size, $cpu, $ram, $countCore){
         parent::__construct($id, $name, $price, $qty, $size);
         $this->cpu = $cpu;
         $this->ram = $ram;
-        $this->CountCore = $CountCore;
+        $this->countCore = $countCore;
 
     }
-    public function getPCProduct(){
-        $out = parent::getProduct();
+    public function getProductInfo(){
+        $out = parent::getProductInfo();
         $out .="<p>Производитель процессора: {$this -> cpu}</p>".
         "<p>Объем памяти: {$this -> ram}</p>".
-        "<p>Количество ядер: {$this -> CountCore}</p>"; 
+        "<p>Количество ядер: {$this -> countCore}</p>"; 
         return $out;
+
+
     }
 
 }

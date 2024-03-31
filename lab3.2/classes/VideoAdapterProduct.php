@@ -13,8 +13,8 @@ class VideoAdapterProduct extends Product{
         $this->frequency = $frequency;
 
     }
-    public function getVADProduct(){
-        $out = parent::getProduct();
+    public function getProductInfo(){
+        $out = parent::getProductInfo();
         $out .= "<p>Объем памяти: {$this -> memory}</p>".
         "<p>Производитель видеокарты: {$this -> brand}</p>".
         "<p>Частота чипа: {$this -> frequency}</p>";
