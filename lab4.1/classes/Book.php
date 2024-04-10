@@ -5,7 +5,7 @@ class Book extends Product implements IWorkBook {
 
     private $pages;
 
-    public $price;
+    private $price;
 
     public $description;
 
@@ -25,6 +25,13 @@ class Book extends Product implements IWorkBook {
     }
 
     public function getWorkBook(){
-        echo self::WORKBOOK;
+        return self::WORKBOOK;
+    }
+
+    public function getInfoProd(){
+        $out = parent::getInfoProd();
+        $out .= "<p>Количество страниц: {$this -> pages}</p>".
+        "<p>Цена товара: {$this -> price}</p>";
+        return $out;
     }
 }

@@ -6,8 +6,10 @@ require_once 'classes/Book.php';
 
 
 $book1 = new Book(2,'Eragorn', 1206, 530);
-print_r( $book1 );
+echo $book1->getInfoProd();
 
-print_r( $book1 -> setDescription('fantazy'));
+echo "<h3>О товаре: {$book1 -> setDescription('fantazy')}</h3>";
 
-echo "nn".$book1->getWorkBook();
+if (get_class($book1) == "Book") {
+    echo "Есть ли рабочая тетрадь к книге(да-1/нет-1): ".$book1->getWorkBook();
+}
