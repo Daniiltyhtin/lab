@@ -10,7 +10,7 @@ abstract class Product{
         $this->name = $name;
     }
 
-    abstract function getDescription();
+    #abstract function getDescription();
 
     public function getInfoProd(){
         return "<h2>Информация о товаре</h2><hr>
