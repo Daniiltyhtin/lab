@@ -5,7 +5,6 @@ namespace app;
 use core\Product;
 use interfaces\IScreen;
 use traits\TColor;
-
 class Notebook extends Product implements IScreen{
     
     use TColor;
@@ -24,6 +23,6 @@ class Notebook extends Product implements IScreen{
     }
     
     public function getScreen(){
-        echo "Тип Матрицы экрана {$this -> screen}";
+        echo "<br>Тип Матрицы экрана {$this -> screen}";
     } 
 }
