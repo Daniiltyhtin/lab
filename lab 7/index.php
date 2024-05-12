@@ -17,7 +17,7 @@ echo "<br>";
 $a = new ClassA();
 $b = new ClassB();
 
-$a->getTest2();
+$a->getTest();
 echo '<br>';
 $b->getTest();
 echo '<br>';
