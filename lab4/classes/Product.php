@@ -13,7 +13,7 @@ abstract class Product{
     abstract function getDescription();
 
     public function getInfoProd(){
-        return "<h2>Информация о товаре</h2><hr>
+        return "<h2>О книге</h2>
         <p>Идентификатор товара: {$this->id}</p>
         <p>Наименование товара: {$this->name}</p>";
     }
