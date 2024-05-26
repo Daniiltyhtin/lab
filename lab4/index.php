@@ -5,11 +5,13 @@ require_once 'classes/Product.php';
 require_once 'classes/Book.php';
 
 
-$book1 = new Book(2,'Eragorn', 1206, 530);
+$book1 = new Book(1,'Властелин колец', 899, 449);
 echo $book1->getInfoProd();
 
-echo "<h3>О товаре: {$book1 -> setDescription('fantazy')}</h3>";
+$book1 -> setDescription('fantazy');
+
+echo "<p>О товаре: {$book1 -> getDescription()}</p>";
 
 if (get_class($book1) == "Book") {
-    echo "Есть ли рабочая тетрадь к книге(да-1/нет-1): ".$book1->getWorkBook();
+    echo "<p>Рабочая тетрадь к книге: ".$book1->getWorkBook()."</p>";
 }

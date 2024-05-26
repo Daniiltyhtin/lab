@@ -1,10 +1,8 @@
 <?php 
 
 class File {
-
     public $file; //file-name
     public $fp; //file-pointer
-
     public function __construct($file = "file.txt")
     {
         $this->file = $file;
@@ -15,9 +13,7 @@ class File {
             $this -> fp = fopen($this -> file, 'a');
         }
     }
-    
-    public function __destruct()
-    {
+    public function __destruct(){
         fclose($this -> fp);
     }
 

@@ -2,7 +2,7 @@
 
 interface IWorkBook{
 
-   const WORKBOOK = 0;
+   const WORKBOOK = 'NO';
 
    public function getWorkBook();
    

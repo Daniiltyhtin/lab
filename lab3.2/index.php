@@ -5,11 +5,10 @@
     require 'classes/VideoAdapterProduct.php';
     require 'classes/PCProduct.php';
     
-    $pc1 = new PCProduct(1, 'DEll',30000, 2, 'medium', 'AMD', 16, 6);
-    echo $pc1 -> getProductInfo();
-
-    $product1 = new Product(2, 'Nothingphone',29000 , 1, 'small');
-    echo $product1 -> getProductInfo();
-
-    $videocard1 = new VideoAdapterProduct(3, 'RX 3050', 25000, 5, 'medium', 8, 'Geforce', '1,4');
-    echo $videocard1 -> getProductInfo();
+    $notebook = new PCProduct(1, 'ASUS',49000, 200, 'Средний', 'AMD', 16, 'IPS');
+    $product = new Product(2, 'IPhone',66000 , 400, 'Маленький');
+    $videocard = new VideoAdapterProduct(3, 'RTX 4060 TI', 50000, 500, 'Средний', 8, 'Nvidia', '1,4');
+    
+    echo $notebook -> getProductInfo();
+    echo $product -> getProductInfo();
+    echo $videocard -> getProductInfo();

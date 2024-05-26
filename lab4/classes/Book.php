@@ -4,9 +4,7 @@ require_once 'IWorkBook.php';
 class Book extends Product implements IWorkBook {
 
     private $pages;
-
     private $price;
-
     public $description;
 
     public function __construct($id, $name, $pages, $price){
@@ -19,15 +17,12 @@ class Book extends Product implements IWorkBook {
     public function getDescription(){
         return $this->description;
     }
-
     public function setDescription($description){
-        return $this->description = $description;
+        $this->description = $description;
     }
-
     public function getWorkBook(){
         return self::WORKBOOK;
     }
-
     public function getInfoProd(){
         $out = parent::getInfoProd();
         $out .= "<p>Количество страниц: {$this -> pages}</p>".
