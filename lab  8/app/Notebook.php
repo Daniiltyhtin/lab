@@ -25,4 +25,8 @@ class Notebook extends Product implements IScreen{
     public function getScreen(){
         echo "<br>Тип Матрицы экрана {$this -> screen}";
     } 
+
+    public function __get(){
+        return $this->brand;
+    }
 }
