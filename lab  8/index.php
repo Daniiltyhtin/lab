@@ -15,8 +15,8 @@ echo "<br>";
 print_r($notebook1);
 echo "<br>";
 
-$a = new ClassA();
-$b = new ClassB();
+$a = ClassA::getInstance();
+$b = ClassB::getInstance();
 
 $a->getTest2();
 echo '<br>';

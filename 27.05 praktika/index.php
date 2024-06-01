@@ -13,10 +13,8 @@
         use trais\TAuthor;
 
         $object = new Book('Три медведя', 350, 'желтый', 'маленький', 200, 'сказка');
-        $object -> setAuthor('Лев Николаевич Толстой');
-        echo"{$object -> getProductInfo()}";
-        echo"{$object -> getAuthor()}";
-        echo"{$object -> getCover()}";
+
+        $object -> getInfo();
 
         ?>
     </body>
