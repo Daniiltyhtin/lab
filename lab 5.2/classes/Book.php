@@ -8,6 +8,13 @@
 		$this->numPages = $numPages;
 	}
 
+	public function getProduct()
+	{
+	$out = parent::getProduct();
+	$out .= "Кол-во страниц: {$this->pages}<br>";
+	return $out;
+	}
+
 	public function addProduct($name, $price, $numPages = 0) {
 		// TODO: Implement addProduct() method.
 		var_dump($name);

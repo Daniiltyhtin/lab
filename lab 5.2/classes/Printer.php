@@ -13,7 +13,7 @@ class Printer extends Product implements IPrinter {
 	
 	public function getCartidge() {
 		// TODO: Implement getCase() method.
-		echo "<hr><h3>Информация о картридже для принтера {$this->name}</h3>
+		echo "<h3>Информация о картридже для принтера {$this->name}</h3>
 			  	<p>Картридж для модели {$this->cartridge}</p>";
 	}
 
