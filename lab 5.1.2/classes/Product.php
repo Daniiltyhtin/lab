@@ -15,11 +15,11 @@ abstract class Product {
 		$this->numPages = $numPages;
 	}
 
-	public function getProductInfo($type) {
+	public function getProductInfo() {
 		$out = "<hr><h3>О товаре {$this->name}</h3>" 
 		. "Цена: {$this->price}<br>";
 
-		if($type == 'printer') {
+		if($this instanceof Printer) {
 			$out .= "Картридж: {$this->cartridge}";
 		}else{
 			$out .= "Количество страниц:
