@@ -23,6 +23,16 @@ class Notebook extends Product implements IScreen{
     }
     
     public function getScreen(){
-        echo "<br>Тип Матрицы экрана {$this -> screen}";
+        echo "<p>Тип Матрицы экрана {$this -> screen}<p>";
     } 
+    public function doAction1()
+    {
+        echo '<p>Выполнили действие 1</p>';
+        return $this;
+    }
+    public function doAction2()
+    {
+        echo '<p>Выполнили действие 2</p>';
+        return $this;
+    }
 }

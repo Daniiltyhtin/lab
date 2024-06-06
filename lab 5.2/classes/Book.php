@@ -1,11 +1,11 @@
 <?php
 	class Book extends Product{
 
-	public $numPages;
+	public $pages;
 	
-	public function __construct($name, $price, $numPages) {
+	public function __construct($name, $price, $pages) {
 		parent::__construct($name, $price);
-		$this->numPages = $numPages;
+		$this->pages = $pages;
 	}
 
 	public function getProduct()
@@ -15,10 +15,10 @@
 	return $out;
 	}
 
-	public function addProduct($name, $price, $numPages = 0) {
+	public function addProduct($name, $price, $pages = 0) {
 		// TODO: Implement addProduct() method.
 		var_dump($name);
 		var_dump($price);
-		var_dump($numPages);
+		var_dump($pages);
 	}
 }

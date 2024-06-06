@@ -12,8 +12,5 @@ abstract class Product {
 		$this->name = $name;
 	}
 
-	public function getProductInfo($type) {
-	}
-
 	abstract protected function addProduct($name, $price);
 }
