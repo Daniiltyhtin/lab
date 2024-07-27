@@ -49,8 +49,14 @@ do {
 } while (count($result['result']['items']) == $pageSize);
 
 // Вывод элементов
+$sum = 0;
 foreach ($items as $item) {
-    print_r($item);
-    echo "<br>";
+    // print_r($item);
+    $a = $item['ufCrm6_1721814262'];
+    // $b = $a[0];
+    $sum += $a;
+
+
 }
+print_r($sum);
 ?>
