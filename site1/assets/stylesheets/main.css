@@ -1,0 +1,62 @@
+@import url("styles.css");
+
+.social {
+  color: rgb(0, 4, 255);
+  font-size: 50px;
+}
+
+.firstClass {
+  color: maroon;
+  border: 30px;
+}
+
+.red {
+  background: hsl(246, 100%, 70%);
+}
+
+.green {
+  background: rgba(13, 238, 13, 0.767);
+}
+
+aside {
+  background-color: blueviolet;
+  margin: 50px;
+}
+
+div {
+  background: rgb(21, 173, 59);
+  border-color: rgb(255, 145, 0);
+  border: 15px;
+  border-style: double solid solid double;
+  padding: 1em;
+  margin: 10px; /*делает одинаковые отступы со всех сторон*/
+  margin: 10px 20px; /* первое число отвечает за отступы по верху и низу, а второе ха лево и право */
+  margin: 10px 20px 0 50px; /*отвечает за все отступы по кругу, 1 - верх, 2 - право, 3 - низ, 4 - лево*/
+}
+
+.figure {
+  display: inline-block;
+  background-color: aqua;
+  width: 50%;
+  border: 5px solid blueviolet;
+  text-align: center;
+}
+
+#figure-all {
+  border-radius: 15px;
+  background: red;
+}
+#figure-x-y {
+  border-radius: 50px 15px;
+  background-color: red;
+}
+
+#figure-top-right-bottom-left {
+  border-radius: 5px 15px 50px 90px;
+  background: red;
+}
+
+.section {
+    clear: both;
+    margin: 30px;
+}
