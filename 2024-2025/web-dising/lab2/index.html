@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form in HTML</title>
+</head>
+
+<body>
+  <main>
+    <form action="#">
+      <!-- Name and Password -->
+      <label for="name">Введите имя</label>
+      <input type="text" name="name" placeholder="Введите ваше имя"><br>
+
+      <label for="password">Введите пароль</label>
+      <input type="password" name="password" placeholder="Введите ваш пароль"><br>
+      <!-- Radio -->
+      <label for="c1">Москва</label>
+      <input type="radio" value="Москва" name="city" id="c1"><br>
+
+      <label for="c2">Брянск</label>
+      <input type="radio" value="Брянск" name="city" id="c2"><br>
+
+      <label for="c3">Санк-Петербург</label>
+      <input type="radio" value="Санк-Петербург" name="city" id="c3"><br>
+      <!-- Checkbox -->
+      <label for="c1">Москва</label>
+      <input type="checkbox" value="Москва" name="city" id="c1"><br>
+
+      <label for="c2">Брянск</label>
+      <input type="checkbox" value="Брянск" name="city" id="c2"><br>
+
+      <label for="c3">Санк-Петербург</label>
+      <input type="checkbox" value="Санк-Петербург" name="city" id="c3"><br>
+      <!-- Select -->
+      <label for="phones"> Выберите телефон</label>
+      <select name="phones" id="phones">
+        <option value="1" disabled selected>Марка</option>
+        <option value="Huawei">Huawei</option>
+        <option value="Vivo">Vivo</option>
+        <option value="Nothing">Nothing</option>
+      </select> <br>
+      <!-- File -->
+      <label for="file">Загрузите файл</label>
+      <input type="file" name="file"><br>
+      <!-- Range -->
+      <label for="range1">Вы довольны работой?</label>
+      <input type="range" name="range1"><br>
+      <!-- Data and search -->
+      <label for="date">Выберете сегодняшнию дату</label>
+      <input type="date" name="date"><br>
+
+      <label for="search">Поиск</label>
+      <input type="search" name="search"><br>
+
+      <input type="submit" name="submit" value="Войти">
+    </form>
+    <!-- Audio and Video -->
+    <div>
+      <video width="500px" src="1.mp4"></video>
+    </div>
+    <div>
+      <audio src="2.mp3" controls></audio>
+    </div>
+  </main>
+</body>
+
+</html>
