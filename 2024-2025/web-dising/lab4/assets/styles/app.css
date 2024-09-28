@@ -58,3 +58,9 @@ img {
   padding: 10px;
   border-radius: 10px;
  }
+
+ .box-list {
+  position: absolute;
+  top: 0;
+  right: 0;
+ }
