@@ -1,0 +1,43 @@
+.p-green {
+  color: green;
+  font: 1.25em/1.5 verdana;
+  font-weight: bold;
+  font-style: italic;
+
+}
+
+.p-red {
+  color: red;
+}
+
+#p-unique {
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: white;
+}
+
+* {
+  margin: 0;
+}
+main {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/soty_obem_zheleznyj_167098_1600x900.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: rgb(58, 55, 55);
+}
+
+.text-box {
+  background-color: white;
+  width: 400px;
+  height: 200px;
+  overflow: auto;
+  font: 2em/1.5 Arial;
+  border: 5px solid blue;
+  padding: 30px 15px;
+  margin: 30px;
+  box-sizing: border-box;
+}
