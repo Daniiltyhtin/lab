@@ -1,0 +1,84 @@
+/* Тёмный фон вокруг макета */
+body {
+  background-color: #121212;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.outer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  background-color: #ffffff;
+  width: 393px;
+  height: 852px;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #ffffff;
+  color: #00cc66;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: #00cc66;
+  margin-right: auto;
+}
+
+.page-title {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+}
+
+.content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Боковое меню */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 200px;
+  height: 100%;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  transition: left 0.3s;
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.side-menu.active {
+  left: 0;
+}
+
+.side-menu a {
+  padding: 15px 20px;
+  color: #00cc66;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.side-menu a:hover {
+  background-color: #333333;
+}

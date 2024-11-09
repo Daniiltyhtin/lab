@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyRace - Главная</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Тёмный фон вокруг макета -->
+    <div class="outer-container">
+        <div class="main-container">
+            <!-- Верхняя панель с иконкой меню -->
+            <header class="top-nav">
+                <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+                <h1 class="page-title">StudyRace</h1>
+            </header>
+
+            <div class="content">
+                <section class="section">
+                    <h2>Popular Courses</h2>
+                    <div class="course">
+                        <img src="course1.jpg" alt="Course Image">
+                        <div class="item-text">
+                            <p class="item-title">Course Title 1</p>
+                            <p class="item-desc">Brief description of the course content.</p>
+                        </div>
+                    </div>
+                    <!-- Дополнительные элементы курса можно добавить здесь -->
+                </section>
+
+                <section class="section">
+                    <h2>Recommended for You</h2>
+                    <div class="recommendation">
+                        <img src="recommend1.jpg" alt="Recommendation Image">
+                        <div class="item-text">
+                            <p class="item-title">Recommended Content 1</p>
+                            <p class="item-desc">Brief description of the recommended content.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>Latest News</h2>
+                    <div class="news-item">
+                        <img src="news1.jpg" alt="News Image">
+                        <div class="item-text">
+                            <p class="item-title">News Title 1</p>
+                            <p class="item-desc">Brief description of the news article.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Боковое меню -->
+        <nav class="side-menu" id="sideMenu">
+            <a href="home.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="profile.html">Profile</a>
+            <a href="settings.html">Settings</a>
+        </nav>
+    </div>
+
+    <script>
+        // Функция для открытия и закрытия бокового меню
+        function toggleMenu() {
+            const menu = document.getElementById('sideMenu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
