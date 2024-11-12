@@ -2,10 +2,12 @@
 
 function test()
 {
-  echo "<p>Hello, world!</p>";
+  echo "<h2>Hello, world!</h2>";
 }
 
 test();
+
+echo "<h3>Функция с статической переменной</h3><br>"; 
 
 function test2()
 {
@@ -18,6 +20,7 @@ test2();
 test2();
 test2();
 
+echo "<h3>Функция подсчета суммы аргументов</h3><br>"; 
 function sum($arg1, $arg2, $arg3)
 {
   return ($arg1 + $arg2) * $arg3;
@@ -48,7 +51,11 @@ function table($a, $b)
   echo "</table>";
 }
 
+echo "<h3>Таблица 5 на 8 </h3><br>"; 
+
 table(5, 8);
+
+echo "<h3>Подключение файлов</h3><br>"; 
 
 $data = require_once('../lab1/index.php');
 
@@ -87,21 +94,22 @@ $products = [
   ["cpu" => "Ryzen 3 7320U", "screen" => "13 OLED", "gpu" => "4050", "ssd" => "256 gb", "producer" => "Huawei"]
 ];
 
-
+echo "<p>Функция count</p>";
 
 echo count($products, 1);
 
-echo "<br>";
+echo "<p>Функция array_count_values</p>";
 
 foreach ($products as $product) {
   print_r(array_count_values($product));
   echo "<br>";
 }
 
+echo "<p>Функция array_ckey_exists</p>";
 
 var_dump(array_key_exists(1, $products));
 
-echo "<br><br>";
+echo "<p>Функция in_array</p>";
 
 
 foreach ($products as $product) {
@@ -109,19 +117,19 @@ foreach ($products as $product) {
   echo "<br>";
 }
 
-echo "<br>";
+echo "<p>Функция array_search</p>";
 
 var_dump(array_search(3, $products));
 
-echo "<br>";
+echo "<p>Функция array_keys</p>";
 
 print_r(array_keys($products));
 
-echo "<br>";
+echo "<p>Функция array_values</p>";
 
 print_r(array_values($products));
 
-echo "<br>";
+echo "<p>Функция array_unique</p>";
 
 foreach ($products as $product) {
   print_r(array_unique($product));
@@ -132,23 +140,59 @@ foreach ($products as $product) {
 
 <h2>Самостоятельное задание</h2>
 
+<h3>Функции подсчета</h3>
 <?php
 
+$nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 function user_count($arr)
 {
-  $k = 0;
+  $count = 0;
   foreach ($arr as $k) {
-    $k++;
+    $count++;
   }
-  return $k;
+  return $count;
 }
 
-echo user_count($nums);
+echo "<p>Своя функция: " . user_count($nums) . "</p>";
 
-function sumArray($arr) {
+echo "<p>Встроенная функция: " . count($nums). "</p>";
 
+echo "<h3>Функции подсчета суммы элементов</h3>";
+
+function sumArrayUser($arr)
+{
+  $sum = 0;
+  foreach ($arr as $item) {
+    $sum += $item;
+  }
+  return $sum;
 }
-  ?>
+
+function sumArray($arr)
+{
+  return array_sum($arr);
+}
+
+echo "<p>Функция с использваонием foreach: " . sumArray($nums) . "</p>";
+
+
+echo "<p>Функция с использваонием встроенного метода: " . sumArray($nums) . "</p>";
+
+
+echo "<p>Массив созданный с помощью range()</p>";
+var_dump(range(1, 100));
+echo "<br>";
+
+echo "<p>Массив созданный с for</p>";
+$array = [];
+for ($i = 1; $i <= 100; $i++) {
+  $array[] = $i;
+}
+var_dump($array);
+
+
+?>
+
 
 
 <?php
@@ -191,3 +235,5 @@ foreach ($products as $key => $value) {
 }
 
 echo "</ol>";
+
+// 
