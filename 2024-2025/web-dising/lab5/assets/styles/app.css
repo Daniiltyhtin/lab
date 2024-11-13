@@ -59,4 +59,33 @@ body{
 .element-4 {
   width: 94%;
   margin: 0;
+  position: relative;
+
+}
+
+.element-4_1{ 
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-image: url(../img/planeta.jpg);
+  position: absolute;
+  bottom: 50px;
+  left: 14px;
+}
+
+.element-4_2{ 
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-image: url(../img/zatmenie_luna.jpg);
+  position: absolute;
+  top: 50px;
+  right: 14px;
+}
+
+.element-5 {
+  width: 94%;
+  margin: 0;
+  border-radius: 100px 100px 200px 200px / 70px 70px 200px 200px;
+  opacity: 0.5;
 }
