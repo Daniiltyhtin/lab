@@ -2,61 +2,114 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font: 1em/1.5 Arial, sans-serif;
-
+  font: 1.1em/1.5 Arial, sans-serif;
+  color: #fff;
 }
 
-body{
+body {
   width: 100%;
-  height: 100vh;
 }
 
-.wrapper{
+header {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px
-
-}
-
-.element{
-  width: 30%;
-  height: 500px;
-  background-color: rgb(103, 136, 197);
-  border: 2px solid orange;
-  border-radius: 15px;
-  /* margin: 20px auto; */
+  height: 100px;
+  background-color: #29c030;
+  font: 2em/100% Arial;
   text-align: center;
-  background: url('../img/image.jpg') no-repeat;
-  /* background-size: contain; */
-  background-size: cover;
+  line-height: 100px;
+  margin-bottom: 1.3em;
 }
 
-.element-1{
-  padding: 20px;
-  background-size: 100%;
-  background-origin:content-box;
-  background-clip: content-box;
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 0 auto;
+  width: 95%;
+  justify-content: space-between;
 }
 
-.element-2{
-  padding: 20px;
-  /* background-size: 100%; */
-  border: 20px solid rgba(0,0,0,0.5);
-  background-origin:border-box;
-  background-clip: padding-box;
+.element {
+  margin-bottom: 2em;
+  text-align: center;
+  line-height: 120px;
+  background-color: #29c030;
+  border-radius: 10px;
+  height: 120px;
+  flex-basis: 31%;
+
 }
 
-.element-3{ 
-  padding: 20px;
-  /* background-size: 100%; */
-  border: 20px solid rgba(0,0,0,0.5);
-  background-origin:border-box;
-  background-clip: border-box;
+footer {
+  width: 100%;
+  height: 150px;
+  background-color: #29c030;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  font: 2em/100% Arial;
+  line-height: 150px;
+}
+@media (max-width: 800px) {
+  * {
+    font-size: 1em;
+  }
+
+  header,
+  footer {
+    font-size: 1.5em;
+  }
+
+  .element {
+    flex-basis: 48%;
+    height: 80px;
+    line-height: 80px;
+  }
 }
 
-.element-4 {
-  width: 94%;
-  margin: 0;
+@media (max-width: 400px) {
+  header {
+    height: 80px;
+    line-height: 80px;
+    margin-bottom: 20px;
+  }
+  .content {
+    justify-content: center;
+  }
+
+
+  footer {
+    height: 120px;
+    line-height: 120px;
+  }
 }
+
+@media (aspect-ratio: 2/1) {
+  .element {
+    border: 2px solid #29c030;
+    background-color: red;
+    color: #29c030;
+    font-weight: 700;
+    flex-basis: 96%;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (aspect-ratio: 2/1) {
+  .element {
+    border: 2px solid #29c030;
+    background-color: red;
+    color: #29c030;
+    font-weight: 700;
+    flex-basis: 96%;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (orientation: landscape) {
+  
+}
+
