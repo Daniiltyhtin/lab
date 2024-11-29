@@ -15,7 +15,7 @@
 <body>
   <h2>Функции для работы со строками</h2>
   <?php
-  $stringTest = "Привет Мир!";
+  $stringTest = "_Привет Мир!_";
 
   echo "<p>Тестовая строка = $stringTest</p>";
 
@@ -34,7 +34,28 @@
     "<p>Преобразует специальные символы в HTML-сущности</p>";
   $sringHtml = '<p class="exaple">Hello word<p>';
   echo htmlspecialchars($sringHtml);
+
+  echo "<h3>Функция htmlentities</h3>" .
+  "<p>Преобразует все возможные символы в HTML-сущности</p>";
   echo htmlentities($sringHtml);
+  
+  echo "<h3>Функция ltrim</h3>" .
+  "<p>Удаляет проблелы или другие символы из начала строки</p>";
+  echo ltrim($stringTest, '_');
+  
+  echo "<h3>Функция rtrim</h3>" .
+  "<p>Удаляет проблелы или другие символы из конца строки</p>";
+  echo rtrim($stringTest, '_');
+
+  echo "<h3>Функция trim</h3>" .
+  "<p>Вставляет тег разрыва строки перед каждым переводом строки</p>";
+  echo trim($stringTest, '_');
+
+  echo "<h3>Функция nl2br</h3>" .
+  "<p>Удаляет проблелы или другие символы из начала и конца строки</p>";
+  echo trim($stringTest, '_');
+
+
 
   ?>
 

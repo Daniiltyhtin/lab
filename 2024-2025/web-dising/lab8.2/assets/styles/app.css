@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: 1.1em/1.5 Arial, sans-serif;
+  text-align: center;
+}
+
+body {
+  width: 100%;
+}
+section {
+  margin: 10px;
+  width: 99%;
+  display: grid;
+  gap: 2%;
+  grid-template-columns: 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5%;
+  grid-template-areas:
+    "L L S S   S S S S   S S M M"
+    "A A A A   A A A A   A A A A"
+    "H H H H   H H H H   H H H H"
+    "G G G G   C C C C   C C C C"
+    "F F F F   F F F F   F F F F";
+}
+
+.logo {
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+  grid-area: L;
+}
+
+.search {
+  height: 50px;
+  border: 1px solid black;
+  grid-area: S;
+  border-radius: 10px;
+}
+
+.mobile {
+  height: 50px;
+  border: 1px solid black;
+  grid-area: M;
+  border-radius: 10px;
+}
+
+.menu {
+  grid-area: A;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.header {
+  height: 100px;
+  grid-area: H;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.sitebar {
+  height: 350px;
+  grid-area: G;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.content {
+  height: 350px;
+  grid-area: C;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.footer {
+  height: 200px;
+  grid-area: F;
+  border: 1px solid black;
+  border-radius: 10px;
+}

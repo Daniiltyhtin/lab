@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: 1.1em/1.5 Arial, sans-serif;
+  text-align: center;
+}
+
+body {
+  width: 100%;
+}
+
+header {
+  height: 250px;
+  width: 96%;
+  margin: 1% 2%;
+  display: flex;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 20px 20px 20px;
+}
+
+.logo {
+  border: 1px solid black;
+  height: 100px;
+  width: 20%;
+}
+
+.name-login {
+  width: 40%;
+}
+
+.name {
+  width: 100%;
+  height: 50px;
+  border: 1px solid black;
+}
+
+.login {
+  margin-top: 30px;
+  width: 100%;
+  height: 50px;
+  border: 1px solid black;
+}
+
+.menu {
+  width: 96%;
+  margin: 0 2% 1% 2%;
+  height: 50px;
+  border: 1px solid black;
+}
+.search {
+  width: 30%;
+  margin: 1% 2% 2% 0;
+  height: 50px;
+  border: 1px solid black;
+  margin-left: auto;
+}
+
+main {
+  width: 96%;
+  margin: 0 2%;
+  display: flex;
+  height: 800px;
+  gap: 2%;
+}
+
+.left {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  gap: 2%;
+  flex-direction: column;
+}
+
+.news {
+  width: 56%;
+  border: 1px solid black;
+}
+
+.right {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  gap: 2%;
+  flex-direction: column;
+}
+
+.marketing-left-top {
+  height: 20%;
+  border: 1px solid black;
+
+}
+
+.links {
+  height: 30%;
+  border: 1px solid black;
+}
+
+.partners {
+  height: 50%;
+  border: 1px solid black;
+}
+
+
+.preview {
+  height: 20%;
+  border: 1px solid black;
+}
+
+.marketing-right-top {
+  height: 30%;
+  border: 1px solid black;
+}
+
+.events {
+  height: 50%;
+  border: 1px solid black;
+}
+
+.marketing-bottom {
+  width: 80%;
+  margin: 2% auto;
+  height: 100px;
+  border: 1px solid black;
+}
+
+footer {
+  height: 200px;
+  width: 96%;
+  border: 1px solid black;
+  margin: 2%;
+}
