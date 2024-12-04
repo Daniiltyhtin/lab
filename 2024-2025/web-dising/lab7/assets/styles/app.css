@@ -74,6 +74,7 @@ footer {
   }
   .content {
     justify-content: center;
+    flex-direction: column;
   }
 
 
