@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+      * {
+        font: 1em/1.5 Arial;
+      }
+
+      .wrapper {
+        border: 2px solid purple;
+        border-radius: 15px;
+        width: 300px;
+        margin: auto;
+        padding: 15px;
+      }
+
+      input[type=file] {
+        display: block;
+        background-color: aquamarine;
+      }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+  <form action="index.php" method="POST">
+    <p>Name: <input type="text" name="name"></p>
+    <p>E-mail: <input type="text" name="email"></p>
+    <p>Text: <textarea name="message"></textarea></p>
+    <p>
+      <select name="vars[]" multiple>
+        <option value="v1">Вариант 1</option>
+        <option value="v2">Вариант 2</option>
+        <option value="v3">Вариант 3</option>
+      </select>
+    </p>
+    <p>
+      <button type="submit" name="send_form">Send</button>
+    </p>
+  </form>
+
+  <form action="index.php" method="POST" enctype="multipart/form-data">
+    <input type="file" name="file">
+
+    <button type="submit">Send</button>
+  </form>
+  </div>
+  <div class="wrapper">
+    <a href="session/first.php">Сессии</a>
+  </div>
+</body>
+
+</html>

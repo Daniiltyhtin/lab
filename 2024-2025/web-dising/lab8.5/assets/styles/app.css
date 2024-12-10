@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: 1.1em/1.5 Arial, sans-serif;
+  text-align: center;
+  background-color: white;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    "A A B C"
+    "D E F ."
+    "G G H I"
+    "G G J ."
+    "K K K L"
+    "M . . .";
+  width: 50%;
+  height: 50%;
+  gap: 10px;
+  margin-top: 5%;
+  grid-template-rows: 80px 80px 80px 80px 80px 80px;
+}
+
+.A {
+  grid-area: A;
+}
+
+.B {
+  grid-area: B;
+}
+
+.C {
+  grid-area: C;
+
+}
+
+.D {
+  grid-area: D;
+}
+
+.E {
+  grid-area: E;
+}
+
+.F {
+  grid-area: F;
+}
+
+.G {
+  grid-area: G;
+}
+
+.H {
+  grid-area: H;
+}
+
+.I {
+  grid-area: I;
+}
+
+.J {
+  grid-area: J;
+}
+
+.K {
+  grid-area: K;
+}
+
+.L {
+  grid-area: L;
+  margin-top: 10px;
+}
+
+.M {
+  grid-area: M;
+}
+
+
+.block {
+  border-radius: 5px;
+  background-color: grey;
+  line-height: 40px;
+  color: white;
+}
