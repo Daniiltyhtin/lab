@@ -130,6 +130,6 @@ footer {
 
 @media (-webkit-min-device-pixel-ratio:2), (min-resolution: 192dpi) {
   .element {
-    background-color: black;
+    background-color: orange;
   }
 }
