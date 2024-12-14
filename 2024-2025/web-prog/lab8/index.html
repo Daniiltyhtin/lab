@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация и Авторизация</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      display: flex;
+      justify-content: center;
+      margin-top: 150px;
+      height: 100vh;
+      height: auto;
+    }
+
+    .container {
+      background-color: #fff;
+      width: 100%;
+      max-width: 350px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .btn-container {
+
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+
+    .btn-switch {
+      width: 100px;
+      background-color: #199435;
+      color: #fff;
+      border: none;
+      padding: 10px 0;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+      border: 1px solid #1dc043;
+
+    }
+
+    .btn-switch.active {
+      background-color: #1dc043;
+    }
+
+    .btn-switch:hover {
+      background-color: white;
+      color: #1aa039;
+    }
+
+    .btn-switch:active {
+      background-color: white;
+      color: #1aa039;
+      transform: translateY(10px);
+    }
+
+    .form {
+      display: none;
+    }
+
+    .form.active {
+      display: block;
+    }
+
+    .form input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    .form button {
+      margin: 30px;
+      width: 80%;
+      padding: 10px;
+      background-color: #1dc043;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+      border: 1px solid #1aa039;
+    }
+
+    form button:hover {
+      background-color: white;
+      color: #1aa039;
+    }
+
+    form button:active {
+      background-color: white;
+      color: #1aa039;
+      transform: translateY(10px);
+    }
+
+    .error,
+    .success {
+      margin-bottom: 20px;
+      padding: 10px;
+      border-radius: 4px;
+      color: #fff;
+    }
+
+    .error {
+      background-color: #dc3545;
+    }
+
+    .success {
+      background-color: #28a745;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="btn-container">
+      <button class="btn-switch active" id="btn-register">Регистрация</button>
+      <button class="btn-switch" id="btn-login">Вход</button>
+    </div>
+
+    <div id="form-register" class="form active">
+      <h2>Регистрация</h2>
+      <form action="index.php" method="POST">
+        <input type="text" name="login" placeholder="Логин" required>
+        <input type="password" name="pass" placeholder="Пароль" required>
+        <button name="register">Зарегистрироваться</button>
+      </form>
+    </div>
+
+    <div id="form-login" class="form">
+      <h2>Вход</h2>
+      <form action="index.php" method="POST">
+        <input type="text" name="login" placeholder="Логин" required>
+        <input type="password" name="pass" placeholder="Пароль" required>
+        <button name="auth">Войти</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const btnRegister = document.getElementById('btn-register');
+    const btnLogin = document.getElementById('btn-login');
+    const formRegister = document.getElementById('form-register');
+    const formLogin = document.getElementById('form-login');
+
+    btnRegister.addEventListener('click', () => {
+      formRegister.classList.add('active');
+      formLogin.classList.remove('active');
+      btnRegister.classList.add('active');
+      btnLogin.classList.remove('active');
+    });
+
+    btnLogin.addEventListener('click', () => {
+      formLogin.classList.add('active');
+      formRegister.classList.remove('active');
+      btnLogin.classList.add('active');
+      btnRegister.classList.remove('active');
+    });
+  </script>
+
+</body>
+
+</html>
