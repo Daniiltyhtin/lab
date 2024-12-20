@@ -1,0 +1,114 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+.i-1 {
+  margin-top: 50px;
+  width: 393px;
+  height: 852px;
+
+  background: #fff url(img/image.png) no-repeat;
+  background-size: contain;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+img {
+  width: 245px;
+  height: 151px;
+  margin: 89px 74px 0px 74px;
+  margin-bottom: 43px;
+}
+
+.input {
+  width: 322px;
+  height: 46px;
+  border: 2px solid #4caf50;
+  color: #969696;
+  font: 20px/0px "Inter";
+  border-radius: 10px;
+  padding-left: 18px;
+  padding-top: 23px;
+  margin: 0px 35px 17px 35px;
+}
+
+.button {
+  width: 322px;
+  height: 46px;
+  border: 2px solid #29c030;
+  color: white;
+  font: 20px/45px "Inter";
+  border-radius: 10px;
+  margin: 32px 35px 17px 35px;
+  text-align: center;
+  background: #29c030;
+}
+
+.forgot-password {
+  color: #969696;
+  font: 18px/1.5 "Inter", sans-serif;
+  margin-left: 215px;
+  width: 150px;
+  margin-bottom: 29px;
+}
+
+.links {
+  width: 229px;
+  height: 88px;
+  margin: 0px 82px;
+}
+
+.text-link {
+  font: 18px/1.5 "Mulish", sans-serif;
+  font-weight: bold;
+}
+
+.services {
+  width: 49px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services img {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  margin-top: 16px;
+}
+
+.google {
+  margin: 0 44px 0 0;
+  border-radius: 24px;
+  box-shadow: 0px 3px 7px #535353;
+}
+
+.gosuslugi {
+  margin: 0 44px 0 0;
+  border-radius: 24px;
+  box-shadow: 0px 3px 7px #535353;
+}
+
+.apple {
+  margin: 0;
+  border-radius: 24px;
+  box-shadow: 0px 3px 7px #535353;
+}
+
+.enter {
+  font: 16px/1.5 "Mulish";
+  margin: 39px 0 0 100px;
+  font-weight: 300;
+}
+
+.green-text {
+  color: #29c030;
+  font-weight: 900;
+}

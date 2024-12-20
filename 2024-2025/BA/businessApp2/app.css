@@ -1,0 +1,216 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+.i-1 {
+  margin-top: 50px;
+  width: 393px;
+  height: 953px;
+  border-radius: 20px;
+  background: #fff url(img/image.png) no-repeat;
+  background-size: contain;
+  border: 1px solid black;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.header {
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 3px 20px rgb(192, 188, 188);
+  border-radius: 20px 20px 0 0;
+}
+
+.profile-pic {
+  margin-top: 84px;
+  width: 120px;
+  height: 120px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.name {
+  font-family: "Jost";
+  font-size: 21px;
+  font-weight: 600;
+  margin-top: 8px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.sub-title {
+  font-family: "Mulish";
+  color: gray;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.stats div {
+  text-align: center;
+  font: 13px/1.5 "Mulish";
+  color: #545454;
+  font-weight: 400;
+}
+
+.stats span {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+
+.btn {
+  height: 60px;
+  width: 170px;
+  padding: 0 20px;
+  border-radius: 30px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+}
+
+.subscribe-btn {
+  font: 18px/50px "Mulish";
+  font-weight: 700;
+  background-color: #e8f1ff;
+  color: black;
+  margin-right: 20px;
+  border: 2px solid #b4bdc4;
+}
+
+.message-btn {
+  font: 18px/50px "Mulish";
+  font-weight: 700;
+  background-color: #29c030;
+  color: white;
+}
+
+/* Content Section */
+.content {
+  padding-top: 17px;
+  height: 474px;
+  width: 378px;
+  margin: 17px 8px;
+  background-color: #fff;
+  box-shadow: 0px -3px 20px rgb(192, 188, 188);
+  border-radius: 16px;
+}
+
+.info-text {
+  margin: 0 0 31px 46px;
+  height: 48px;
+  width: 306px;
+  color: gray;
+  font-size: 13px;
+  text-align: center;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 21px;
+  height: 52px;
+  font-family: "Mulish";
+  line-height: 52px;
+}
+
+.tab {
+  background-color: #E8F1FF;
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  color: black;
+}
+
+.tab.active {
+  color: black;
+  background-color: #F5F9FF;
+  border-bottom: 2px solid #29c030;
+  border: 2px solid #E8F1FF;
+}
+
+.course {
+  display: flex;
+  /* align-items: center; */
+  margin-bottom: 7.5px;
+  margin-left: 9px;
+  height: 130px;
+  width: 360px;
+  background-color: #F5F9FF;
+
+}
+
+.course img {
+  width: 130px;
+  height: 130px;
+  background-color: black;
+  margin-right: 10px;
+  border-radius: 16px 0 0 16px;
+}
+
+.course-info {
+  flex: 1;
+}
+
+.course-category {
+  color: #FF6B00;
+  font: 12px/1.5 "Mulish";
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.course-title {
+  font: 16px/1.5 "Jost";
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.course-price {
+  font: 17px/1.5 "Mulish";
+  color: #29c030;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.course-stats {
+  font: 12px/1.5 "Mulish";
+  color: black;
+  font-weight: 600;
+}
+
+star{
+  color: #FAC025;
+  font-size: 15px;
+}
+
+hr {
+  width: 320px;
+  height: 1px;
+  margin: 0 29px 7.5px 29px;
+}
+

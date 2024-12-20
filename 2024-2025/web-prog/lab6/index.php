@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    p {
+    * {
+      box-sizing: border-box;
+    }
+    .error {
       min-height: 50px;
       background-color: red;
       border: 1px solid #235253;
@@ -14,15 +17,25 @@
       color: white;
       font: 1em/25px Arial;
       min-width: 300px;
+      padding: 10px;
+    }
+    .data {
+      min-height: 50px;
+      background-color: darkblue;
+      border: 1px solid blue;
+      border-radius: 5px;
+      color: white;
+      font: 1em/25px Arial;
+      min-width: 300px;
+      padding: 10px;
     }
 
     body {
-      display: flex;
-      justify-content: center;
+
     }
-
     div {
-
+      margin: 50px auto;
+      max-width: 300px;
     }
   </style>
 </head>
@@ -33,17 +46,32 @@
   $errorsArray = [];
   foreach ($_POST as $key => $value) {
     if (empty($value)) {
-      $errorsArray[] = "$key Не может быть пустым";
+      if ($key != 'send_form') {
+        $errorsArray[] = "$key Не может быть пустым";
+      }
     }
   }
 
   if (empty($errorsArray)) {
-    print_r($_POST);
+    echo "<div><p class='data'>Name :" . $_POST['name'] . "</p>" .
+      "<p class='data'>Email :" . $_POST['email'] . "</p>" .
+      "<p class='data'>Message :" . $_POST['message'] . "</p>";
+    if (isset($_POST['vars'][0])) {
+      echo "<p class='data'>Options :" . $_POST['vars'][0] . "</p>";
+    }
+    if (isset($_POST['vars'][1])) {
+      echo "<p class='data'>Options :" . $_POST['vars'][1] . "</p>";
+      if (isset($_POST['vars'][2])) {
+        echo "<p class='data'>Options :" . $_POST['vars'][2] . "</p>";
+      }
+    }
+    echo '<a href="index.html">Вернуть к форме</a>';
+    echo "</div>";
   } else {
     $i = 1;
     echo "<div>";
     foreach ($errorsArray as $error) {
-      echo "<p>" . $i . " - " . $error . "</p>";
+      echo "<p class='error'>" . $i . " - " . $error . "</p>";
       $i++;
     }
 

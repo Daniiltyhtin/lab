@@ -1,0 +1,155 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #bb9336;
+}
+
+.interface {
+  width: 375px;
+  height: 812px;
+  background-color: #fff;
+  border: 1px solid black;
+  margin: 50px auto;
+}
+/* Header */
+
+.header {
+  width: 375px;
+  height: 124px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  align-items: top;
+  line-height: 0;
+}
+
+.topbar {
+  width: 100%;
+  height: 44px;
+}
+
+.arrow {
+  margin-top: 10px;
+  width: 24px;
+  height: 24px;
+  margin-left: 24px;
+}
+
+.logo {
+  width: 44px;
+  height: 44px;
+  margin: 0 0 15px 12px;
+}
+
+.text-block-header {
+  width: 114px;
+  height: 37px;
+  margin-left: 12px;
+}
+
+.name-header {
+  font: 16px/1.5 "Roboto";
+  font-weight: 500;
+}
+
+.status {
+  font: 12px/1.5 "Roboto";
+}
+
+/* Chat */
+
+.chat {
+  padding: 0 24px;
+  width: 100%;
+  height: 688px;
+  position: relative;
+}
+
+.date {
+  display: flex;
+  margin-top: 21px;
+  margin-bottom: 24px;
+  font: 12px/12px "Roboto";
+  font-weight: 700;
+  justify-content: center;
+}
+/* User message */
+.message-user {
+  margin-left: auto;
+  display: flex;
+  width: 178px;
+  height: 54px;
+  flex-direction: column;
+}
+
+.message-user .text-message {
+  margin-left: auto;
+  font: 400 12px/36px "Roboto";
+  max-width: 178px;
+  padding: 0 10px;
+  height: 36px;
+  border-radius: 15px 0 15px 15px;
+  color: #fff;
+  background-color: #ffc746;
+}
+
+.time {
+  font: 10px/10px "Roboto";
+  margin-left: auto;
+  margin-top: 8px;
+  color: #797c7b;
+  width: 25px;
+}
+
+/* Bot message */
+
+.message-bot {
+  width: 242px;
+  height: 86px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 0;
+  max-height: 246px;
+}
+
+.text-block-message-bot {
+  width: 190px;
+  height: 80px;
+  margin-top: auto;
+  margin-left: auto;
+  max-width: 194px;
+}
+
+.min-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.name {
+  font: 500 14px/14px "Roboto";
+  margin-bottom: 12px;
+}
+
+.text-block-message-bot .text-message {
+  margin-left: 10px;
+  font: 400 12px/36px "Roboto";
+  max-width: 178px;
+  padding: 0 10px;
+  height: 36px;
+  border-radius: 15px 0 15px 15px;
+  color: #000E08;
+  background-color: #f2f2f2;
+}
+
+.write {
+  width: 100%;
+  height: 90px;
+}
+
+.massage-input-string {
+  display: inline-block;
+}

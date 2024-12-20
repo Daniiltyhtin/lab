@@ -43,8 +43,11 @@ $db = mysqli_connect('localhost', 'root', '', 'users') or die('Error connection'
 $login = 'NewCountry';
 $pass = "29AdsivbliLI";
 
-$query = sprintf("INSERT INTO users(login, pass) VALUES ('%s',%s)", mysqli_real_escape_string($db, $login), (str) $pass);
-var_dump(mysqli_query($db, $query));
+$query = sprintf(
+  "INSERT INTO users SET login='%s', pass='%s' WHERE id=6",
+  mysqli_real_escape_string($db, $login2),
+  mysqli_real_escape_string($db, $pass2)
+);var_dump(mysqli_query($db, $query));
 
 $login2 = 'Петров';
 $pass2 = 'wkeigq25';

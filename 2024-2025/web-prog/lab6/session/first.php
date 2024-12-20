@@ -50,10 +50,9 @@
     <?php
 
     session_start();
-    echo "<h3>Эту страницу может видеть любой пользователь</h3>" .
-      "<p>Количество посещений {$_SESSION['count']}</p>";
-
+    echo "<h3>Эту страницу может видеть любой пользователь</h3>";
     $_SESSION['count'] = isset($_SESSION['count']) ? ++$_SESSION['count'] : 1;
+    echo "<p>Количество посещений {$_SESSION['count']}</p>";
 
     $login = 'admin';
     $password = '1234567890';
