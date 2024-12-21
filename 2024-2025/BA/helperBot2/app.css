@@ -1,0 +1,111 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #bb9336;
+}
+
+.interface {
+  position: relative;
+  width: 375px;
+  height: 812px;
+  background-color: #f2f2f2;
+  border: 1px solid black;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.header {
+  margin-top: 11px;
+  width: 343px;
+  height: 66px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.topbar {
+  width: 100%;
+  height: 44px;
+}
+
+.arrow {
+  margin-top: 18px;
+  width: 25.5px;
+  height: 18px;
+  margin-left: 8px;
+}
+
+.name-header {
+  margin-top: 23px;
+  margin-left: auto;
+  margin-right: 31px;
+  font: 20px/12px "Roboto";
+}
+
+.image {
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  padding-left: 9px;
+  margin-right: 17px;
+  font: 20px/65px "Roboto";
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+  margin-top: 93px;
+  margin-left: 87px;
+}
+
+.menu {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 227px;
+  border-radius: 9px 9px 0 0;
+  background-color: #797c7b;
+  padding: 0 35px;
+}
+
+.top-line {
+  width: 32px;
+  height: 4px;
+  border-radius: 999px;
+  margin: 8px auto 29px auto;
+  background-color: #fff;
+}
+
+.button-container {
+  display: flex;
+  width: 305px;
+  height: 69px;
+  justify-content: space-between;
+}
+
+.button-long {
+  width: 137px;
+  height: 43px;
+  margin-top: 22px;
+}
+
+.button-long-2 {
+  width: 137px;
+  height: 43px;
+  margin-top: 22px;
+  margin-left: 24px;
+}
+
+.bottom-line {
+  width: 135px;
+  height: 4px;
+  border-radius: 999px;
+  margin: 8px auto 29px auto;
+  background-color: #fff;
+  margin-top: 32px;
+}
